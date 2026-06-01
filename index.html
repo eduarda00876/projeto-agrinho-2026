@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agro Forte - Futuro Sustentável</title>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body{
+      background:#0f1720;
+      color:white;
+      line-height:1.6;
+    }
+
+    header{
+      background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+      url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=1600&auto=format&fit=crop');
+      background-size:cover;
+      background-position:center;
+      height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      text-align:center;
+      padding:20px;
+    }
+
+    header h1{
+      font-size:4rem;
+      margin-bottom:20px;
+      color:#9be15d;
+      text-shadow:2px 2px 8px black;
+    }
+
+    header p{
+      font-size:1.3rem;
+      max-width:800px;
+      margin:auto;
+      background:rgba(0,0,0,0.5);
+      padding:15px;
+      border-radius:10px;
+    }
+
+    nav{
+      background:#1d2b1f;
+      padding:15px;
+      position:sticky;
+      top:0;
+      z-index:1000;
+      text-align:center;
+    }
+
+    nav a{
+      color:#9be15d;
+      text-decoration:none;
+      margin:0 15px;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    nav a:hover{
+      color:white;
+    }
+
+    section{
+      padding:60px 10%;
+    }
+
+    .titulo{
+      font-size:2.5rem;
+      margin-bottom:30px;
+      color:#9be15d;
+      text-align:center;
+    }
+
+    .cards{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:30px;
+    }
+
+    .card{
+      background:#1b2631;
+      border-radius:15px;
+      overflow:hidden;
+      box-shadow:0 0 15px rgba(0,0,0,0.5);
+      transition:0.4s;
+    }
+
+    .card:hover{
+      transform:translateY(-10px);
+    }
+
+    .card img{
+      width:100%;
+      height:220px;
+      object-fit:cover;
+    }
+
+    .card-content{
+      padding:20px;
+    }
+
+    .card-content h3{
+      color:#9be15d;
+      margin-bottom:10px;
+    }
+
+    .banner{
+      background:linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)),
+      url('https://images.unsplash.com/photo-1464226184884-fa280b87c399?q=80&w=1600&auto=format&fit=crop');
+      background-size:cover;
+      background-position:center;
+      padding:100px 20px;
+      text-align:center;
+    }
+
+    .banner h2{
+      font-size:3rem;
+      color:#9be15d;
+      margin-bottom:20px;
+    }
+
+    .banner p{
+      max-width:800px;
+      margin:auto;
+      font-size:1.2rem;
+    }
+
+    footer{
+      background:#111;
+      text-align:center;
+      padding:30px;
+      color:#aaa;
+    }
+
+    .btn{
+      display:inline-block;
+      margin-top:25px;
+      padding:15px 35px;
+      background:#9be15d;
+      color:#111;
+      text-decoration:none;
+      border-radius:30px;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    .btn:hover{
+      background:white;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#sustentabilidade">Sustentabilidade</a>
+    <a href="#tecnologia">Tecnologia</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <header>
+    <div>
+      <h1>Agro Forte,<br> Futuro Sustentável</h1>
+      <p>
+        Equilíbrio entre produção e meio ambiente, mostrando como o agronegócio
+        moderno pode alimentar o mundo preservando a natureza para as próximas gerações.
+      </p>
+
+      <a href="#sobre" class="btn">Explorar</a>
+    </div>
+  </header>
+
+  <section id="sobre">
+    <h2 class="titulo">O Poder do Agro Sustentável</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1500937386664-56d1dfef3854?q=80&w=1200&auto=format&fit=crop" alt="Plantação">
+        <div class="card-content">
+          <h3>Produção Responsável</h3>
+          <p>
+            O campo utiliza técnicas modernas para aumentar a produtividade
+            sem prejudicar os recursos naturais.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?q=80&w=1200&auto=format&fit=crop" alt="Natureza">
+        <div class="card-content">
+          <h3>Preservação Ambiental</h3>
+          <p>
+            A proteção das florestas, rios e biodiversidade é essencial
+            para garantir um futuro equilibrado.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=1200&auto=format&fit=crop" alt="Tecnologia no campo">
+        <div class="card-content">
+          <h3>Tecnologia no Campo</h3>
+          <p>
+            Máquinas inteligentes e inovação ajudam a reduzir desperdícios
+            e aumentar a eficiência agrícola.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="banner">
+    <h2>Equilíbrio Entre Produção e Meio Ambiente</h2>
+    <p>
+      O desenvolvimento sustentável no agronegócio mostra que é possível produzir alimentos,
+      gerar empregos e proteger o planeta ao mesmo tempo.
+    </p>
+  </section>
+
+  <section id="sustentabilidade">
+    <h2 class="titulo">Práticas Sustentáveis</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1472396961693-142e6e269027?q=80&w=1200&auto=format&fit=crop" alt="Animais">
+        <div class="card-content">
+          <h3>Proteção da Fauna</h3>
+          <p>
+            A agricultura sustentável respeita os ecossistemas e protege os animais silvestres.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1492496913980-501348b61469?q=80&w=1200&auto=format&fit=crop" alt="Energia limpa">
+        <div class="card-content">
+          <h3>Energia Renovável</h3>
+          <p>
+            O uso de energia solar e fontes limpas reduz os impactos ambientais.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1464226184884-fa280b87c399?q=80&w=1200&auto=format&fit=crop" alt="Agricultura">
+        <div class="card-content">
+          <h3>Solo Saudável</h3>
+          <p>
+            Técnicas de conservação garantem maior fertilidade e proteção contra erosão.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="tecnologia">
+    <h2 class="titulo">Inovação e Futuro</h2>
+
+    <div class="cards">
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1516259762381-22954d7d3ad2?q=80&w=1200&auto=format&fit=crop" alt="Drone agrícola">
+        <div class="card-content">
+          <h3>Drones Agrícolas</h3>
+          <p>
+            A tecnologia auxilia no monitoramento das plantações e no uso consciente de recursos.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?q=80&w=1200&auto=format&fit=crop" alt="Energia solar">
+        <div class="card-content">
+          <h3>Energia Sustentável</h3>
+          <p>
+            Fazendas modernas investem em energia limpa para diminuir impactos ambientais.
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?q=80&w=1200&auto=format&fit=crop" alt="Campo">
+        <div class="card-content">
+          <h3>Futuro Verde</h3>
+          <p>
+            O agro sustentável representa esperança, inovação e preservação para o futuro.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <footer id="contato">
+    <h2>Agro Forte - Futuro Sustentável</h2>
+    <p>
+      Projeto desenvolvido com foco na conscientização sobre sustentabilidade no campo.
+    </p>
+    <br>
+    <p>© 2026 - Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
+

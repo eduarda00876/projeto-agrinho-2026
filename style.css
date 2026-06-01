@@ -1,0 +1,350 @@
+/* =====================================
+   AGRO FORTE - FUTURO SUSTENTÁVEL
+   style.css
+===================================== */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* =====================================
+   BODY
+===================================== */
+
+body{
+  background: #0f1720;
+  color: white;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* =====================================
+   SCROLL BAR
+===================================== */
+
+::-webkit-scrollbar{
+  width: 10px;
+}
+
+::-webkit-scrollbar-track{
+  background: #111;
+}
+
+::-webkit-scrollbar-thumb{
+  background: #9be15d;
+  border-radius: 10px;
+}
+
+/* =====================================
+   MENU
+===================================== */
+
+nav{
+  width: 100%;
+  padding: 18px;
+  background: rgba(0,0,0,0.85);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  backdrop-filter: blur(10px);
+  text-align: center;
+}
+
+nav a{
+  color: #9be15d;
+  text-decoration: none;
+  margin: 0 18px;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.4s;
+}
+
+nav a:hover{
+  color: white;
+  text-shadow: 0 0 10px #9be15d;
+}
+
+/* =====================================
+   HEADER
+===================================== */
+
+header{
+  width: 100%;
+  height: 100vh;
+
+  background:
+  linear-gradient(rgba(0,0,0,0.65),
+  rgba(0,0,0,0.65)),
+
+  url('https://images.unsplash.com/photo-1501004318641-b39e6451bec6?q=80&w=1600&auto=format&fit=crop');
+
+  background-size: cover;
+  background-position: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+}
+
+header h1{
+  font-size: 70px;
+  color: #9be15d;
+  margin-bottom: 25px;
+  text-shadow: 3px 3px 10px black;
+}
+
+header p{
+  max-width: 850px;
+  margin: auto;
+  font-size: 22px;
+  background: rgba(0,0,0,0.5);
+  padding: 20px;
+  border-radius: 12px;
+}
+
+/* =====================================
+   BOTÃO
+===================================== */
+
+.btn{
+  display: inline-block;
+  margin-top: 30px;
+  padding: 15px 35px;
+  background: #9be15d;
+  color: #111;
+  border-radius: 40px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  transition: 0.4s;
+}
+
+.btn:hover{
+  background: white;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #9be15d;
+}
+
+/* =====================================
+   SECTIONS
+===================================== */
+
+section{
+  padding: 80px 10%;
+}
+
+.titulo{
+  text-align: center;
+  font-size: 45px;
+  color: #9be15d;
+  margin-bottom: 50px;
+  text-shadow: 0 0 10px rgba(155,225,93,0.4);
+}
+
+/* =====================================
+   CARDS
+===================================== */
+
+.cards{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 35px;
+}
+
+.card{
+  background: #1b2631;
+  border-radius: 18px;
+  overflow: hidden;
+  transition: 0.5s;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+.card:hover{
+  transform: translateY(-10px);
+  box-shadow: 0 0 20px rgba(155,225,93,0.5);
+}
+
+.card img{
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  transition: 0.5s;
+}
+
+.card img:hover{
+  transform: scale(1.05);
+}
+
+.card-content{
+  padding: 25px;
+}
+
+.card-content h3{
+  color: #9be15d;
+  margin-bottom: 15px;
+  font-size: 25px;
+}
+
+.card-content p{
+  color: #ddd;
+  font-size: 17px;
+}
+
+/* =====================================
+   BANNER
+===================================== */
+
+.banner{
+  width: 100%;
+  padding: 120px 20px;
+
+  background:
+  linear-gradient(rgba(0,0,0,0.75),
+  rgba(0,0,0,0.75)),
+
+  url('https://images.unsplash.com/photo-1464226184884-fa280b87c399?q=80&w=1600&auto=format&fit=crop');
+
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+.banner h2{
+  font-size: 55px;
+  color: #9be15d;
+  margin-bottom: 25px;
+}
+
+.banner p{
+  max-width: 900px;
+  margin: auto;
+  font-size: 22px;
+}
+
+/* =====================================
+   GALERIA
+===================================== */
+
+.galeria{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.galeria img{
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 15px;
+  transition: 0.5s;
+}
+
+.galeria img:hover{
+  transform: scale(1.03);
+  box-shadow: 0 0 20px rgba(155,225,93,0.5);
+}
+
+/* =====================================
+   FOOTER
+===================================== */
+
+footer{
+  background: #111;
+  text-align: center;
+  padding: 50px 20px;
+  border-top: 3px solid #9be15d;
+}
+
+footer h2{
+  color: #9be15d;
+  margin-bottom: 15px;
+  font-size: 35px;
+}
+
+footer p{
+  color: #ccc;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+/* =====================================
+   ANIMAÇÕES
+===================================== */
+
+@keyframes aparecer{
+
+  from{
+    opacity: 0;
+    transform: translateY(40px);
+  }
+
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+}
+
+.card{
+  animation: aparecer 1s ease;
+}
+
+/* =====================================
+   RESPONSIVIDADE
+===================================== */
+
+@media(max-width: 900px){
+
+  header h1{
+    font-size: 50px;
+  }
+
+  header p{
+    font-size: 18px;
+  }
+
+  .titulo{
+    font-size: 35px;
+  }
+
+  .banner h2{
+    font-size: 40px;
+  }
+
+}
+
+@media(max-width: 600px){
+
+  nav a{
+    display: block;
+    margin: 10px 0;
+  }
+
+  header h1{
+    font-size: 38px;
+  }
+
+  header p{
+    font-size: 16px;
+  }
+
+  .banner h2{
+    font-size: 30px;
+  }
+
+  .banner p{
+    font-size: 18px;
+  }
+
+}
+
+/* =====================================
+   FIM DO CSS
+===================================== */
+
